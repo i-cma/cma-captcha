@@ -1,0 +1,27 @@
+{
+    "name": "cma/cma-captcha",
+    "description": "The cma Captcha Package",
+    "license": "AGPL-3.0",
+    "require": {
+        "php": ">=7.1.0",
+        "topthink/framework": "^6.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "cma\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "cma\\CaptchaService"
+            ],
+            "config":{
+                "captcha": "src/config.php"
+            }            
+        }
+    }
+}
